@@ -1,0 +1,93 @@
+/* Dark Gray Background for the Page */
+body {
+    background-color: #2e2e2e; /* Dark Gray */
+    color: #e5e5e5; /* Light Grunge White Text */
+    font-family: 'Courier New', Courier, monospace; /* Grunge Font */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Grunge Text Styling */
+h1 {
+    font-size: 2rem;
+    color: #e5e5e5; /* Grunge White */
+    text-shadow: 2px 2px 5px #000, -2px -2px 5px #000; /* Grunge Glow */
+}
+
+/* 360° Fast Rotation Animation for the Image */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* "About Me" Text Wave Animation */
+@keyframes wave-about-me {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+/* Image Styling with Animation (Smaller Size) */
+.wave-once {
+    animation: rotate 0.7s ease-in-out; /* Rotate fast */
+    position: absolute;
+    top: 19px;
+    left: 0;
+    width: 63%; /* Make the image width 50% of the screen */
+    max-width: 200px; /* Max image width reduced */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 0 10px #000; /* Optional: Shadow effect */
+    margin-top: 50px; /* Add some space at the top */
+}
+
+/* Positioning the Top Right Image */
+.top-right-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 250px; /* Small size for the image */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer Centering */
+footer p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #e5e5e5;
+}
+
+/* Section Content Styling */
+header, section {
+    padding: 20px;
+}
+
+/* Footer Styling */
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* "About Me" Text Animation */
+.about-me, .about-me-text {
+    animation: wave-about-me 3s ease-in-out infinite; /* Wave every 3 seconds */
+}
+
+/* Specific Style for "About Me" */
+.about-me {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: #e5e5e5;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.about-me-text {
+    font-size: 1rem;
+    color: #e5e5e5;
+    text-shadow: 1px 1px 3px #000;
+}

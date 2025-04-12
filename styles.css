@@ -28,19 +28,6 @@ h1 {
     100% { transform: translateY(0); }
 }
 
-/* Image Styling with Animation (Smaller Size) */
-.wave-once {
-    animation: rotate 0.7s ease-in-out; /* Rotate fast */
-    position: absolute;
-    top: 19px;
-    left: 0;
-    width: 63%; /* Make the image width 50% of the screen */
-    max-width: 200px; /* Max image width reduced */
-    height: auto; /* Keep aspect ratio */
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0 0 10px #000; /* Optional: Shadow effect */
-    margin-top: 50px; /* Add some space at the top */
-}
 
 /* Positioning the Top Right Image */
 .top-right-image {
